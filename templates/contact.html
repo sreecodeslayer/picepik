@@ -1,0 +1,63 @@
+{% include 'head.html' %}
+{% include 'nav.html' %}
+<div class="banner animated"></div>
+<div class="content-section-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        <form class="form-horizontal">
+            <fieldset>
+            <legend>Contact US</legend>
+            <div class="form-group">
+                <label for="userNamel" class="col-lg-3 control-label">Name</label>
+                <div class="col-lg-9">
+                  <input type="text"
+                          class="form-control"
+                          id="userName"
+                          placeholder="What should we call you!?"
+                          autocomplete="off" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="userEmail" class="col-lg-3 control-label">Email</label>
+                <div class="col-lg-9">
+                  <input type="email"
+                          class="form-control"
+                          id="userEmail"
+                          placeholder="Where should we shoot our response!"
+                          autocomplete="off" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="userPhone" class="col-lg-3 control-label">Phone</label>
+                <div class="col-lg-9">
+                  <input type="tel"
+                          class="form-control"
+                          id="userPhone"
+                          placeholder="Perhaps we could call you if you wish!"
+                          autocomplete="off" required>
+                </div>
+            </div>
+            <div class="form-group">
+              <label for="textArea" class="col-lg-3 control-label">Message</label>
+              <div class="col-lg-9">
+                <textarea class="form-control" rows="3" id="textArea"></textarea><grammarly-btn><div style="visibility: hidden; z-index: 2;" class="_e725ae-textarea_btn _e725ae-anonymous _e725ae-not_focused" data-grammarly-reactid=".0"><div class="_e725ae-transform_wrap" data-grammarly-reactid=".0.0"><div title="Protected by Grammarly" class="_e725ae-status" data-grammarly-reactid=".0.0.0">&nbsp;</div></div><span class="_e725ae-btn_text" data-grammarly-reactid=".0.1">Not signed in</span></div></grammarly-btn>
+                <span class="help-block">We want you to tell your needs/problems/suggestions! Let's do it.</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-9 col-lg-offset-2">
+              <button type="submit" class="btn btn-success">Send</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+</div>
+
+{% include 'footer.html' %}

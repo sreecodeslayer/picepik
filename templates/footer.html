@@ -1,0 +1,66 @@
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">Made in Kerala with <i class="fa fa-heart text-danger animated infinite jello" aria-hidden="true"></i><br>Copyright &copy; Picepik 2017. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+
+<script src="{{ url_for('static',filename='js/waypoints.min.js') }}"></script>
+
+<script>
+$(document).ready(function(){
+
+  // hide our element on page load
+  $('#container-1').css('opacity', 0);
+  $('#container-2').css('opacity', 0);
+  $('#container-3').css('opacity', 0);
+  $('#container-4').css('opacity', 0);
+
+  $('#container-1').waypoint(function() {
+      $('#container-1').addClass('fadeInLeft');
+  }, { offset: '50%' });
+
+  $('#container-3').waypoint(function() {
+      $('#container-3').addClass('fadeInLeft');
+  }, { offset: '50%' });
+
+  $('#container-2').waypoint(function() {
+      $('#container-2').addClass('fadeInRight');
+  }, { offset: '50%' });
+
+  $('#container-4').waypoint(function() {
+      $('#container-4').addClass('fadeInRight');
+  }, { offset: '50%' });
+
+});
+</script>
+</body>
+
+</html>
