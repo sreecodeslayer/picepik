@@ -1,1 +1,6 @@
+python_bcrypt==0.3.2
 Flask==0.12
+flask_login==0.4.0
+flask_mongoengine==0.9.2
+asposebarcode==1.0.0
+Werkzeug==0.12.1
