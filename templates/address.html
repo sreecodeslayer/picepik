@@ -1,0 +1,74 @@
+{% include 'head.html' %}
+<body ng-controller = "MainController">
+{% include 'nav.html' %}
+<div class="content-section-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+          <h2 class="section-heading">Your address book</h2>
+          <div class="row">
+            <div class="col-xs-5">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Address 1
+                    <span class="pull-right">
+                      <i class="fa fa-pencil">&nbsp;</i>
+                      <i class="fa fa-floppy-o">&nbsp;</i>
+                      <i class="fa fa-trash-o">&nbsp;</i>
+                    </span>
+                  </h3>
+                </div>
+                <div class="panel-body">
+                  <label class="text-muted col-lg-9 control-label">Name: <label class="text-primary">[Name goes here]</label></label>
+                  <label class="text-muted col-lg-9 control-label">Address:<br><label  class="text-primary">[The long address you gave goes here and here and here]</label></label>
+                  <label class="text-muted col-lg-9 control-label">Pincode: <label  class="text-danger">670308</label></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-info float" data-toggle="modal" data-target="#new-address"><i class="fa fa-address-book-o"></i></button>
+
+        <div class="modal fade" id="new-address">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">New Address&nbsp; <i class="fa fa-address-book"></i></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal" ng-submit="newAddress()">
+                    <div class="form-group">
+                      <label for="name" class="col-lg-2 control-label">Name</label>
+                      <div class="col-lg-10">
+                        <input type="text" ng-model="new_address.name" class="form-control" id="name" placeholder="Your name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="address" class="col-lg-2 control-label">Address</label>
+                      <div class="col-lg-10">
+                        <textarea class="form-control" ng-model="new_address.address" rows="3" id="address" style="resize:vertical"></textarea>
+                        <span class="help-block">We would like to have your full address.</span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="pincode" class="col-lg-2 control-label">Pincode</label>
+                      <div class="col-lg-10">
+                        <input type="number" ng-model="new_address.pin" class="form-control" id="pincode" placeholder="Your area pincode">
+                      </div>
+                    </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-success">Save <i class="fa fa-check"></i></button>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+</div>
+{% include 'footer.html' %}

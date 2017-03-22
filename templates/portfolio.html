@@ -1,0 +1,147 @@
+{% include 'head.html' %}
+<body ng-controller = "MainController">
+{% include 'nav.html' %}
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+            <h1>Ahh, So you are stalking us!</h1>
+            <p>Alright, you can access all our works here, and if you wish to have them, then go ahead and fill your cart!</p>
+            <p><a class="btn btn-primary btn-large">Call to action!</a>
+            </p>
+        </header>
+
+        <hr>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Our Works</h3>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Page Features -->
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature animated">
+                <div class="thumbnail hvr-underline-from-center">
+                    <img class="hvr-grow" src="http://neosurrealism.artdigitaldesign.com/modern-artists/?images/digital-art/image-photo-manipulation.jpg" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#"
+                            class="btn btn-warning"
+                            data-toggle="tooltip"
+                            data-placement="bottom"
+                            title=""
+                            data-original-title="Add to cart!">Buy Now!</a>
+                            <a href="#"
+                            class="btn btn-info"
+                            data-toggle="tooltip"
+                            data-placement="bottom"
+                            title=""
+                            data-original-title="Click to see product details">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature animated">
+                <div class="thumbnail hvr-underline-from-center">
+                    <img class="hvr-grow" src="https://wallpaperfree.org/wp-content/uploads/2017/02/blue-eyes-digital-art-800x600.jpg" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#"
+                            class="btn btn-warning"
+                            data-toggle="tooltip"
+                            data-placement="bottom"
+                            title=""
+                            data-original-title="Add to cart!">Buy Now!</a>
+                            <a href="#"
+                            class="btn btn-info"
+                            data-toggle="tooltip"
+                            data-placement="bottom"
+                            title=""
+                            data-original-title="Click to see product details">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature animated">
+                <div class="thumbnail hvr-underline-from-center">
+                    <img class="hvr-grow" src="http://andreart.yolasite.com/resources/maria%27s%20gaze%20%20digital%20art%20prints%20figurative%20colourful%20artist.jpg" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#"
+                            class="btn btn-warning"
+                            data-toggle="tooltip"
+                            data-placement="bottom"
+                            title=""
+                            data-original-title="Add to cart!">Buy Now!</a>
+                            <a href="#"
+                            class="btn btn-info"
+                            data-toggle="tooltip"
+                            data-placement="bottom"
+                            title=""
+                            data-original-title="Click to see product details">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature animated">
+                <div class="thumbnail hvr-underline-from-center">
+                    <img class="hvr-grow" src="https://cdn.allwallpaper.in/wallpapers/800x600/1343/artwork-digital-art-fantasy-hot-air-balloons-800x600-wallpaper.jpg" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#"
+                            class="btn btn-warning"
+                            data-toggle="tooltip"
+                            data-placement="bottom"
+                            title=""
+                            data-original-title="Add to cart!">Buy Now!</a>
+                            <a href="#"
+                            class="btn btn-info"
+                            data-toggle="tooltip"
+                            data-placement="bottom"
+                            title=""
+                            data-original-title="Click to see product details">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-danger float" data-toggle="modal" data-target="#cart"><i class="fa fa-shopping-cart"></i></button>
+        <div class="modal fade" id="cart">
+          <div class="modal-dialog  modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Your Cart <i class="fa fa-shopping-cart"></i></h4>
+              </div>
+              <div class="modal-body">
+                <p>One fine body…</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Checkout <i class="fa fa-check"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+        <hr>
+
+      </div>
+{% include 'footer.html' %}
