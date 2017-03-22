@@ -160,6 +160,27 @@ h6 {
     }
 }
 
+.hero-spacer {
+    margin-top: 15%;
+}
+
+.float{
+  z-index: 200;
+  cursor: pointer;
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:10%;
+	right:1%;
+	color:#FFF;
+	border-radius:100%;
+	text-align:center;
+	box-shadow: 0px 4px 5px 0px #999;
+}
+.hero-feature {
+    margin-bottom: 10%;
+}
+
 footer {
     position: relative;
     display: flex;
@@ -169,4 +190,7 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+i {
+  cursor: pointer;
 }

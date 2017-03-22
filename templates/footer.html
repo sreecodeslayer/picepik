@@ -5,19 +5,19 @@
             <div class="col-lg-12">
                 <ul class="list-inline">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="/#about">About</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="#services">Services</a>
+                        <a href="/#services">Services</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="/#contact">Contact</a>
                     </li>
                 </ul>
                 <p class="copyright text-muted small">Made in Kerala with <i class="fa fa-heart text-danger animated infinite jello" aria-hidden="true"></i><br>Copyright &copy; Picepik 2017. All Rights Reserved</p>
@@ -28,11 +28,13 @@
 
 <!-- jQuery -->
 <script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
-
+<!-- Angular -->
+<script src="{{ url_for('static',filename='js/angular.min.js') }}"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
 
 <script src="{{ url_for('static',filename='js/waypoints.min.js') }}"></script>
+<script src="{{ url_for('static',filename='js/app.js') }}"></script>
 
 <script>
 $(document).ready(function(){
@@ -42,6 +44,7 @@ $(document).ready(function(){
   $('#container-2').css('opacity', 0);
   $('#container-3').css('opacity', 0);
   $('#container-4').css('opacity', 0);
+  $('.hero-feature').css('opacity', 0);
 
   $('#container-1').waypoint(function() {
       $('#container-1').addClass('fadeInLeft');
@@ -59,7 +62,13 @@ $(document).ready(function(){
       $('#container-4').addClass('fadeInRight');
   }, { offset: '50%' });
 
+  $('.hero-feature').waypoint(function() {
+      $('.hero-feature').addClass('fadeIn');
+  }, { offset: '50%' });
+
+  $('[data-toggle="tooltip"]').tooltip({container:'body'});
 });
+
 </script>
 </body>
 
